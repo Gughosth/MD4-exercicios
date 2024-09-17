@@ -7,6 +7,8 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            font-variant: small-caps;
         }
     </style>
 </head>
@@ -15,15 +17,40 @@
         Primeiro Formulário 
     </h1>
 
-    <form>
+    <form action="cadastro.php" method="post" autocomplete="on">
         
             <P>
-                 Nome : <input type="text" name="Nome" id="Nome">
+                 <label for="inome">Nome :</label> <input type="text" name="Nome" id="inome">
             </P>
             <P>
-                 Sobrenome : <input type="text" name="Sobrenome" id="Sobrenome">
+                 <label for="isobrenome"> Sobrenome :</label> <input type="text" name="Sobrenome" id="isobrenome">
             </P>
             <p><input type="submit" value="Enviar"></p>
+
+
+            <p>
+                
+                    <label for="isu">Usuário:
+                    <input type="text" name="isu" id="usu" required minlength="5" maxlength="15" size="20" placeholder="nome do usuário"
+                    autocomplete="username">
+
+
+                    </label>
+
+            
+            </p>
+
+            <p>
+                <label for="isen">
+                    Senha :
+                </label>
+                <input type="password"name="isen" id="isen" required minlength="8" maxlength="10" size="10" placeholder="senha" autocomplete="current-password">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         
     </form>
         
