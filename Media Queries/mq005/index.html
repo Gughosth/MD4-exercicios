@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site em Media Query</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="estilos/media.css">
+</head>
+<body onresize="mudouTamanho ()">
+    <header>
+        <h1>Site Menu Responsivo</h1>
+        <span class="material-symbols-outlined" id="mn" onclick="clickMenu()">menu</span>
+        <menu id="icons">
+            <ul type="square">
+                <li><a href="#">Opções</a></li>
+                <li><a href="#">Opções</a></li>
+                <li><a href="#">Opções</a></li>
+                <li><a href="#">Opções</a></li>
+                <li><a href="#">Opções</a></li>
+                
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Sites com Media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolore voluptates maxime a neque, doloribus asperiores, et tenetur soluta illo non, eum tempora reiciendis ipsa deserunt quia est totam autem?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est dolorum fugiat voluptas dicta velit officia aut optio at placeat ipsam quas illo magnam aspernatur, iste magni facilis quasi commodi.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil at adipisci necessitatibus dolore voluptas quo? Accusantium ea, impedit officiis nisi consequatur alias ad pariatur cupiditate? Suscipit, deserunt. Debitis, quae.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil at adipisci necessitatibus dolore voluptas quo? Accusantium ea, impedit officiis nisi consequatur alias ad pariatur cupiditate? Suscipit, deserunt. Debitis, quae.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil at adipisci necessitatibus dolore voluptas quo? Accusantium ea, impedit officiis nisi consequatur alias ad pariatur cupiditate? Suscipit, deserunt. Debitis, quae.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil at adipisci necessitatibus dolore voluptas quo? Accusantium ea, impedit officiis nisi consequatur alias ad pariatur cupiditate? Suscipit, deserunt. Debitis, quae.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil at adipisci necessitatibus dolore voluptas quo? Accusantium ea, impedit officiis nisi consequatur alias ad pariatur cupiditate? Suscipit, deserunt. Debitis, quae.</p>
+
+
+
+
+        </article>
+    </main>
+ 
+        
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                icons.style.display = 'block'
+            } else {
+                icons.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (icons.style.display == 'block') {
+                icons.style.display = 'none'
+            
+            } else { 
+                icons.style.display = 'block'
+            }
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>
